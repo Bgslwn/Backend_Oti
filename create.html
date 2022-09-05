@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %} Add Student {% endblock %}
+
+{% block body %}
+
+
+<div class="container">
+    <form method="post" action="">
+   <table class="table">
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" name="first_name" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text" name="last_name" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" class="form-control"></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>
+        Male: <input type = "radio" name = "gender" value="male"/>
+        Female: <input type = "radio" name = "gender" value="female"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Divisi</td>
+        <td>
+            Backend : <input type="checkbox" name="divisi" value="backend">
+            Frontend : <input type="checkbox" name="divisi" value="frontend">
+            CyberSec : <input type="checkbox" name="divisi" value="cybersec">
+            GameDev : <input type="checkbox" name="divisi" value="gamedev">
+            UI/UX : <input type="checkbox" name="divisi" value="ui/ux">
+            CompPrgm : <input type="checkbox" name="divisi" value="compprgm">
+            DataSci : <input type="checkbox" name="divisi" value="datasci">
+            Mobile : <input type="checkbox" name="divisi" value="mobile">
+            
+
+        </td>
+    </tr>
+
+    <tr>
+         <td colspan="2">
+            <input type="submit" name="submit" value="submit" class="btn btn-warning">
+         </td>
+    </tr> 
+   </table>
+
+    </form>
+
+</div>
+
+
+{% endblock %}

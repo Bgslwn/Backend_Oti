@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+<div class="container">
+<form action="" method="post">
+    Click List to observe
+    <a href="/list">List</a>
+</form>
+<form action="" method="post">
+    Click Add Student to add
+    <a href="/create">Add Student</a>
+</form>
+<form action="" method="post">
+    Click Log out to get out
+    <a href="/logout">Log out</a>
+</form>
+</div>
+{% endblock %}
